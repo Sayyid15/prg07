@@ -1,25 +1,32 @@
 {
   "expo": {
-    "name": "prg07",
-    "slug": "prg07",
+    "name": "sportLocator",
+    "slug": "sportLocator",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/sportLocator.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/sportLocator.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
+    ],"plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
     ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/sportLocator.png",
         "backgroundColor": "#ffffff"
       }
     },
