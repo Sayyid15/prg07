@@ -6,18 +6,24 @@
     "orientation": "portrait",
     "icon": "./assets/sportLocator.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/sportLocator.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": [
       "**/*"
-    ],"plugins": [
+    ],
+    "plugins": [
       [
         "expo-location",
         {
           "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/sportLocator.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
         }
       ]
     ],

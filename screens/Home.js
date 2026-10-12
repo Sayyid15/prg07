@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import AntDesign from "react-native-vector-icons/AntDesign";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function Home({ darkMode, shopData, updateFavorites, fetchData, navigation }) {
     const [refresh, setRefresh] = useState(false);
@@ -79,7 +79,7 @@ export default function Home({ darkMode, shopData, updateFavorites, fetchData, n
                             <Text style={styles.text}>{item.title}</Text>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => favoritePress(item)}>
-                            <AntDesign name={myFavorite(item) ? 'star' : 'staro'} size={50} />
+                            <Ionicons name={myFavorite(item) ? 'star' : 'star-outline'} size={50} />
                         </TouchableOpacity>
                     </View>
                 )}

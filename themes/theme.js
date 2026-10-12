@@ -1,4 +1,8 @@
+import { DefaultTheme, DarkTheme } from "@react-navigation/native";
+
+// React Navigation 7 requires a `fonts` key on themes, so extend its built-in themes
 export const lightTheme = {
+    ...DefaultTheme,
     dark: false,
     colors: {
       primary: "#6200EE",
@@ -11,6 +15,7 @@ export const lightTheme = {
   };
   
   export const darkTheme = {
+    ...DarkTheme,
     dark: true,
     colors: {
       primary: "#BB86FC",

@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {StyleSheet, Text, View, FlatList, Pressable, TouchableOpacity, SafeAreaView} from "react-native";
-import Fontisto from "react-native-vector-icons/Fontisto";
-import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+import Fontisto from "@expo/vector-icons/Fontisto";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import {useNavigation} from "@react-navigation/native";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import AntDesign from "react-native-vector-icons/AntDesign";
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 
 export default function Info({route}) {
